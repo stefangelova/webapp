@@ -27,3 +27,9 @@ class Bookss(db.Model):
         author = db.Column('author', db.Unicode)
         average_rating = db.Column('average_rating', db.Unicode)
 
+
+class Booklist(db.Model):
+	__tablename__ = 'book_list'
+	 book_list_id = ('book_list_id', db.Integer, primary_key=True)
+	book_id = ('book_id', db.Integer)
+	user_id =('user_id', db.Integer)
